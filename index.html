@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting visualizer</title>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="options">
+            <select name="select sort algorithm" id="menu" class="algo_drop">
+                <option value="0">Algorithms</option>
+                <option value="1">Bubble Sort</option>
+                <option value="2">Merge Sort</option>
+            </select>
+        </div>
+        <div class="options">
+            <select name="Size" id="menu" class="size_drop">
+                <option value="-1" }>Random</option>
+                <option value="5">5</option>
+                <option value="15">15</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+
+        <div class="options">
+            <select name="speed of visualization" id="menu" class="speed_drop">
+                <option value="0">Speed</option>
+                <option value="0.1">Very Slow</option>
+                <option value="0.15">Slow</option>
+                <option value="0.6">Moderate</option>
+                <option value="2">Fast</option>
+                <option value="1000">Very Fast</option>
+            </select>
+        </div>
+        <a class="start">Start Sorting</a>
+        <a class="icon"><i class="fa fa-bars"></i></a>
+    </nav>
+    <div class="setAlert"></div>
+    <div class="wrapper">
+        <div class="frame" id="box">
+            <div class="array"></div>
+        </div>
+    </div>
+    <div class="sortDetails">
+        <div id="No_of_swaps"></div>
+        <div id="comparisons"></div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/helper_functions.js"></script>
+    <script src="./scripts/Algos.js"></script>
+</body>
+
+</html>
