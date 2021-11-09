@@ -34,8 +34,8 @@ body {
 
 .navbar #menu {
     margin-top: 15px;
-    width: 150px;
-    height: 25px;
+    width: 180px;
+    height: 30px;
     outline: none;
 }
 
@@ -80,7 +80,7 @@ hr.rainbow {
     display: flex;
     position: absolute;
     right: 0px;
-    width: 150px;
+    width: 180px;
     align-items: center;
     justify-content: center;
 }
@@ -110,7 +110,7 @@ hr.rainbow {
     position: relative;
     right: 200px;
     border: 2px solid rgb(87, 5, 5);
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Chakra Petch', sans-serif;
     border-radius: 4px;
     margin-left: 5px;
@@ -131,7 +131,7 @@ hr.rainbow {
 .wrapper {
     margin: 8px auto;
     width: 95%;
-    height: 70vh;
+    height: 65vh;
     background: linear-gradient(90deg, #a50037 4%, #a50037 0%) top/100% 34% no-repeat,
         linear-gradient(0deg, #fbff04 50%, #fbff04 0%) top/100% 82% no-repeat,
         linear-gradient(90deg, #1930b4 10%, #1930b4 0%) top/100% 100%;
@@ -230,4 +230,29 @@ hr.rainbow {
     text-align: center;
     width: 30%;
     height: 30px;
+}
+
+/* Sorting Details */
+.sortDetails {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#No_of_swaps,
+#comparisons,
+#timer,
+#showTime {
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 20px;
+    width: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 60px;
+    color: white;
+    background-color: rgb(245, 90, 90);
 }

@@ -1,5 +1,5 @@
-var rc =0;
-"use strict";
+var rc = 0;
+("use strict");
 class Algorithm {
     constructor(time) {
         this.list = document.querySelectorAll(".cell");
@@ -9,9 +9,9 @@ class Algorithm {
     }
     // SELECTION SORT
     SelectionSort = async () => {
-        for (let i = 0; i < this.size; ++i) {
+        for (let i = 0; i < this.size; i++) {
             let MI = i;
-            for (let j = i; j < this.size; ++j) {
+            for (let j = i; j < this.size; j++) {
                 await this.functionhelp.mark_bar(j);
                 await this.functionhelp.mark_Sel(MI);
                 if (await this.functionhelp.isgreater(MI, j)) {
@@ -31,7 +31,6 @@ class Algorithm {
     };
 
     InsertionSort = async () => {
-
         for (let i = 1; i < this.size; i++) {
             let j = i - 1;
             while (j >= 0 && (await this.functionhelp.isgreater(j, j + 1))) {
