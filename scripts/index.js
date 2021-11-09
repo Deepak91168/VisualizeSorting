@@ -10,7 +10,7 @@ function Timer(starttime) {
         var seconds = Math.floor((difference % (60 * 1000)) / 1000);
         var milliseconds = Math.floor(difference % 1000);
         document.getElementById("timer").innerHTML =
-            "Time: " + minutes + "m: " + seconds + "s: " + milliseconds + " ms";
+            "Time: " + minutes + "m " + seconds + "s " + milliseconds + "ms";
     }, 1);
 }
 function randomNumber(low, high) {
