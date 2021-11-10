@@ -131,11 +131,11 @@ hr.rainbow {
 .wrapper {
     margin: 8px auto;
     width: 95%;
-    height: 65vh;
+    height: 70vh;
     background: linear-gradient(90deg, #a50037 4%, #a50037 0%) top/100% 34% no-repeat,
         linear-gradient(0deg, #fbff04 50%, #fbff04 0%) top/100% 82% no-repeat,
         linear-gradient(90deg, #1930b4 10%, #1930b4 0%) top/100% 100%;
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     border-radius: 4px;
 }
@@ -234,6 +234,7 @@ hr.rainbow {
 
 /* Sorting Details */
 .sortDetails {
+    margin-top: 30px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -244,7 +245,8 @@ hr.rainbow {
 #comparisons,
 #timer,
 #showTime {
-    border-radius: 4px;
+    border: 4px solid rgb(182, 6, 35);
+    border-radius: 5px;
     font-size: 18px;
     text-align: center;
     border: 1px solid black;
@@ -256,4 +258,21 @@ hr.rainbow {
     color: white;
     background-color: rgb(245, 90, 90);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
 }
+#No_of_swaps:hover,
+#comparisons:hover,
+#timer:hover,
+#showTime:hover{
+    background-color: rgba(245, 90, 90, 0.918);
+} 
+
+@media screen and (max-width: 1180px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    .heading{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+  }

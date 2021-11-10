@@ -97,7 +97,7 @@ const RenderList = async () => {
         const bar = document.createElement("div");
         bar.className = "cell";
         bar.setAttribute("value", String(element));
-        bar.style.height = `${5 * element}px`;
+        bar.style.height = `${5*(1/16) * element}em`;
         arrayNode.appendChild(bar);
     }
 };

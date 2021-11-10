@@ -34,13 +34,14 @@ class Helper {
         return false;
     };
     swap = async (i1, i2) => {
+        var height = 5 * (1 / 16);
         await this.delay();
         let v1 = this.list[i1].getAttribute("value");
         let v2 = this.list[i2].getAttribute("value");
         this.list[i1].setAttribute("value", v2);
-        this.list[i1].style.height = `${5 * v2}px`;
+        this.list[i1].style.height = `${height * v2}em`;
         this.list[i2].setAttribute("value", v1);
-        this.list[i2].style.height = `${5 * v1}px`;
+        this.list[i2].style.height = `${height * v1}em`;
         count_swaps(swaps);
         swaps++;
     };
