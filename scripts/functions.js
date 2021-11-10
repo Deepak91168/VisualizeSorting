@@ -34,7 +34,7 @@ class Helper {
         return false;
     };
     swap = async (i1, i2) => {
-        var height = 5 * (1 / 16);
+        var height = 4.5 * (1 / 16);
         await this.delay();
         let v1 = this.list[i1].getAttribute("value");
         let v2 = this.list[i2].getAttribute("value");

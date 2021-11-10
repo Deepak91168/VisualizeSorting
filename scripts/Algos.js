@@ -1,4 +1,5 @@
-var rc = 0;
+var x = 0;
+var y = 0;
 ("use strict");
 class Algorithm {
     constructor(time) {
@@ -79,6 +80,8 @@ class Algorithm {
             await this.MergeDivider(mid + 1, end);
             await this.Merge(start, mid, end);
         }
+        x++;
+        console.log(x);
     };
 
     Merge = async (start, mid, end) => {
@@ -116,7 +119,7 @@ class Algorithm {
         ) {
             await this.functionhelp.delay();
             this.list[c].setAttribute("value", newList[point]);
-            this.list[c].style.height = `${4 * newList[point]}px`;
+            this.list[c].style.height = `${4.5 * (1 / 16) * newList[point]}em`;
         }
         for (let c = start; c <= end; ++c) {
             this.list[c].setAttribute("class", "cell");
@@ -135,6 +138,8 @@ class Algorithm {
             let pivot = await this.Partition(start, end);
             await this.QuickDivider(start, pivot - 1);
             await this.QuickDivider(pivot + 1, end);
+            y++;
+            console.log(y);
         }
     };
 

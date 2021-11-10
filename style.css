@@ -131,7 +131,7 @@ hr.rainbow {
 .wrapper {
     margin: 8px auto;
     width: 95%;
-    height: 70vh;
+    height: 60vh;
     background: linear-gradient(90deg, #a50037 4%, #a50037 0%) top/100% 34% no-repeat,
         linear-gradient(0deg, #fbff04 50%, #fbff04 0%) top/100% 82% no-repeat,
         linear-gradient(90deg, #1930b4 10%, #1930b4 0%) top/100% 100%;
