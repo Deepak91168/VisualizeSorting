@@ -59,10 +59,11 @@ const start = async () => {
     await Alert_for_Algo(algo);
     Timer(startTime);
     if (algo === 1) await algorithm.BubbleSort();
-    if (algo === 2) await algorithm.MergeSort();
-    if (algo === 3) await algorithm.InsertionSort();
+    if (algo === 2) await algorithm.InsertionSort();
+    if (algo === 3) await algorithm.shelleSort();
     if (algo === 4) await algorithm.SelectionSort();
-    if (algo === 5) await algorithm.QuickSort();
+    if (algo === 5) await algorithm.MergeSort();
+    if (algo === 6) await algorithm.QuickSort();
     var stopTime = document.getElementById("timer").innerHTML;
     document.getElementById("timer").remove();
     document.getElementById("showTime").innerHTML = stopTime;
@@ -97,7 +98,7 @@ const RenderList = async () => {
         const bar = document.createElement("div");
         bar.className = "cell";
         bar.setAttribute("value", String(element));
-        bar.style.height = `${4.5*(1/16) * element}em`;
+        bar.style.height = `${4.5 * (1 / 16) * element}em`;
         arrayNode.appendChild(bar);
     }
 };
