@@ -1,5 +1,7 @@
 # VisualizeSorting
-Contribution Guidelines
-Comment under the issue and ask for more details if required <br/>
-
-Create a new branch and make PR
+# Tech Stalks
+<p align="center">
+[!image](https://img.shields.io/badge/HTML-v5.3-orange)
+[!image](https://img.shields.io/badge/CSS-3-blue)
+[!image](https://img.shields.io/badge/Java-Script-blue)
+</p>
