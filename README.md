@@ -14,7 +14,6 @@ Concept of OOP's is used in Programe Logic.
 
 ## Installation
 
-Install my-project with npm
 
 - Open up the Terminal and choose a location where you want to setup the Project.
 - Clone this Repository as
