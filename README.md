@@ -1,9 +1,5 @@
 # VisualizeSorting
 
-Visual Sort Assist (VSA) is a logistic solution that dramatically transforms the process of manual parcel sorting. It combines object recognition and projection mapping technology to reduce the judgement time for sorting parcel destinations.
-
-Concept of OOP's is used in Programe Logic.
-
 ## Tech Stalks
 
 <p align="center">
