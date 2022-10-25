@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    top: 0;
+    margin: 0;
+    width: auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+/* NavBar */
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    min-height: 60px;
+    background-color: rgb(245, 90, 90);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar #menu {
+    margin-top: 15px;
+    width: 180px;
+    height: 30px;
+    outline: none;
+}
+
+/* Heading */
+.title_container {
+    margin-top: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    padding: 3px;
+}
+
+.heading {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Saira Stencil One', cursive;
+    color: white;
+    font-weight: bold;
+}
+
+/* Rainbow Horizontal Line */
+hr {
+    border: none;
+    height: 4px;
+}
+
+hr.rainbow {
+    background: #ff0000;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff0000), color-stop(25%, #ffff00), color-stop(50%, #00ff00), color-stop(75%, #00ffff), color-stop(100%, #0000ff));
+    background: -webkit-linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+    background: -moz-linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+    background: -o-linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+    background: -ms-linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+    background: linear-gradient(-45deg, #5855f0 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+}
+
+/* Start Button */
+.button_wrapper {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sort_begains {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #db6969;
+}
+
+#sort_begains:hover {
+    cursor: pointer;
+}
+
+/* Drop Down */
+.size_drop,
+.speed_drop,
+.algo_drop {
+    position: relative;
+    right: 200px;
+    border: 2px solid rgb(87, 5, 5);
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 11px;
+    background: #ffffff;
+    transition: all 0.3s;
+}
+
+.size_drop:hover,
+.speed_drop:hover,
+.algo_drop:hover {
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Array && Bars*/
+.wrapper {
+    margin: 8px auto;
+    width: 95%;
+    height: 60vh;
+    background: linear-gradient(90deg, #a50037 4%, #a50037 0%) top/100% 34% no-repeat,
+        linear-gradient(0deg, #fbff04 50%, #fbff04 0%) top/100% 82% no-repeat,
+        linear-gradient(90deg, #1930b4 10%, #1930b4 0%) top/100% 100%;
+    min-height: 250px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.frame {
+    margin: 4px;
+    background: #fff;
+    height: auto;
+    width: 100%;
+    padding: 5px 10px 0px 10px;
+    font-family: helvetica, sans-serif;
+    color: #286ad8;
+}
+
+.array {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.cell {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    flex: 0.25;
+    background-color: rgb(182, 0, 0);
+    position: relative;
+    border-right: 0.005em solid white;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.cell:hover {
+    background-color: #800303;
+}
+
+/* Clsses to be added while sorting */
+.cell.done {
+    background: linear-gradient(45deg, rgb(255, 226, 96) 0%, rgba(230, 220, 15, 1) 36%, rgb(7, 168, 201) 100%, rgb(77, 74, 245) 36%);
+    transition: 0.2s ease-in-out;
+
+}
+
+.cell.selection {
+    background-color: #0be8f8;
+    transition: 0.2s ease-in-out;
+}
+
+.cell.current {
+    background-color: #a5ff15;
+    transition: 0.2s ease-in-out;
+}
+
+.cell.current:hover {
+    background-color: rgba(110, 197, 10, 0.692);
+}
+
+.cell.insertion {
+    background-color: #0be8f8;
+    transition: 0.2s ease-in-out;
+}
+
+.cell.insertion:hover {
+    cursor: pointer;
+    background-color: rgb(123, 121, 221);
+    transition: 0.2s ease-in-out;
+}
+
+/* Alerts */
+.alert_wrap {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.setAlert {
+    text-align: center;
+    width: 25%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.speedAlert {
+    padding-top: 1px;
+    font-size: 11px;
+    text-align: center;
+    width: 30%;
+    height: 30px;
+}
+
+/* Sorting Details */
+.sortDetails {
+    margin-top: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#No_of_swaps,
+#comparisons,
+#timer,
+#recursive,
+#showTime {
+    border: 4px solid rgb(182, 6, 35);
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 20px;
+    width: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 60px;
+    color: white;
+    background-color: rgb(245, 90, 90);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+#No_of_swaps:hover,
+#comparisons:hover,
+#timer:hover,
+#recursive:hover,
+#showTime:hover{
+    background-color: rgba(245, 90, 90, 0.918);
+} 
+
+@media screen and (max-width: 1180px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    .heading{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+  }
