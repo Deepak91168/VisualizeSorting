@@ -4,12 +4,25 @@
 
 <p align="center">
 
- ![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-E34F26?&style=for-the-badge&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-E34F26?&style=for-the-badge&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 </p>
 
-## Installation
+## Site Demonstration
 
+### Selecting algorithm to visualize
+
+![Site demo](./Site%20demo/Selecting%20the%20algo.gif)
+
+### Choosing size and speed
+
+![Site demo](./Site%20demo/Choosing%20size%20and%20speed.gif)
+
+### Running the algorithm
+
+![Site demo](./Site%20demo/Running%20of%20the%20algo.gif)
+
+## Installation
 
 - Open up the Terminal and choose a location where you want to setup the Project.
 - Clone this Repository as
@@ -38,18 +51,18 @@ You can refer the following documemtations for any issue!
 
 - For HTML
 
-````
+```
   https://developer.mozilla.org/en-US/docs/Web/HTML
-````
+```
 
 - For CSS
 
-````
+```
 https://developer.mozilla.org/en-US/docs/Web/CSS
-````
+```
 
 - For JavaScript
 
-````
+```
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
-````
+```
