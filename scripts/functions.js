@@ -1,4 +1,3 @@
-"use strict";
 var swaps = 0;
 var comparisons = 0;
 class Helper {
