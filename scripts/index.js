@@ -1,4 +1,3 @@
-"use strict";
 const d = new Date();
 const startTime = d.getTime();
 function Timer(starttime) {
