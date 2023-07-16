@@ -22,6 +22,10 @@
 ```
 - Open `index.html` with your browser or run using liveServer.
 
+## Screenshot
+![Visualize Sorting](./images/screenshot.png)
+
+
 ## Contributing
 
 Contributions are always welcome :)
