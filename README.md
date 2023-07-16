@@ -1,54 +1,52 @@
 # VisualizeSorting
 
-## Tech Stalks
+ 🖇️ Deployed Link : https://deepak91168.github.io/VisualizeSorting/
 
-<p align="center">
+ A web application hosted on github pages, designed to showcase the visualization of renowned sorting algorithms including bubble sort, insertion sort, selection sort, merge sort, and quick sort.
+
+## Tech Stack
 
  ![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-E34F26?&style=for-the-badge&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-</p>
 
 ## Installation
 
+- Fork the Repository and clone it at the desired location
 
-- Open up the Terminal and choose a location where you want to setup the Project.
-- Clone this Repository as
-  `https://github.com/Deepak91168/VisualizeSorting`
-- `cd VisualizeSorting`
-- Now open up the Project in any IDE and start Contributing.
+```bash
+  git clone https://github.com/<UserName>/VisualizeSorting.git
+```
+- Open Repository
+```bash 
+   cd VisualizeSorting
+```
+- Open `index.html` with your browser or run using liveServer.
 
 ## Contributing
 
-Can resolve the issues mentioned and
+Contributions are always welcome :)
 
-Contributions are always welcome!
-
-1. Fork the Project.
-2. Create your Feature Branch
-   `git checkout -b feature/AmazingFeature`
-3. Commit your Changes
-   `git commit -m 'Add some AmazingFeature'`
-4. Push to the Branch
-   `git push origin feature/AmazingFeature`
-5. Open a Pull Request.
+Can work upon the [issues](https://github.com/Deepak91168/VisualizeSorting/issues) mentioned or can create new issues as well.
+#### Guideline
+1. Fork the Repository
+2. Create your featureBranch.
+3. Commit your changes (`git commit -m "Added amazingFeature"`)
+4. Push to the branch (`git push origin feature/amazingFeature`)
+5. Open up a Pull Request.
 
 ## References
 
-You can refer the following documemtations for any issue!
+You can refer the following documentation for any issue!
 
-- For HTML
-
+- HTML
 ````
   https://developer.mozilla.org/en-US/docs/Web/HTML
 ````
-
-- For CSS
-
+- CSS
 ````
 https://developer.mozilla.org/en-US/docs/Web/CSS
 ````
-
-- For JavaScript
+- JavaScript
 
 ````
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
