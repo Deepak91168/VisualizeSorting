@@ -49,32 +49,6 @@ class Algorithm {
         }
     };
 
-    //SHELL SORT
-    shelleSort = async () => {
-        for (let gap = this.size / 2; gap >= 1; gap = gap / 2) {
-            await this.functionhelp.mark_bar(gap);
-            for (let j = gap; j < this.size; j++) {
-                await this.functionhelp.mark_bar(j);
-                for (let i = j - gap; i >= 0; i = i - gap) {
-                    // await this.functionhelp.mark_bar_insertion(i);
-                    if (await this.functionhelp.isgreater(i, i + gap)) {
-                        await this.functionhelp.swap(i + gap, i);
-                    } else {
-                        break;
-                    }
-
-                    await this.functionhelp.unmark_bar(i);
-                    await this.functionhelp.delay();
-                    await this.functionhelp.unmark_bar(j);
-                }
-
-            }
-        }
-        for (let i = 0; i < this.size; i++) {
-            this.list[i].setAttribute("class", "cell done");
-        }
-    }
-
     BubbleSort = async () => {
         for (let i = 0; i < this.size - 1; i++) {
             for (let j = 0; j < this.size - i - 1; j++) {

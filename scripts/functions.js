@@ -2,7 +2,7 @@ var swaps = 0;
 var comparisons = 0;
 class Helper {
     constructor(time, list = []) {
-        this.time = parseInt(15 / time); //String to int
+        this.time = parseInt(15 / time);
         this.list = list;
     }
     mark_Sel = async (i) => {
