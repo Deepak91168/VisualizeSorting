@@ -1,26 +1,15 @@
-const d = new Date();
-// let timer = document.getElementById("timer").innerHTML
-const startTime = d.getTime();
 let size = Number(document.querySelector(".size_drop").value);
-function Timer(starttime) {
-  // let timer =
-  // setInterval(() => {
-  // document.getElementById("timer").innerHTML
-    console.log("timer running")
+const timer = document.getElementById("timer")
 
-    var start_time = starttime;
+// This will be the function which updates the DOM 
+function Timer(start_time) {
     var current_time = new Date().getTime();
     var difference = current_time - start_time;
     var minutes = Math.floor((difference % (60 * 60 * 1000)) / (1000 * 60));
     var seconds = Math.floor((difference % (60 * 1000)) / 1000);
     var milliseconds = Math.floor(difference % 1000);
-    document.getElementById("timer").innerHTML = "Time: " + minutes + "m " + seconds + "s " + milliseconds + "ms";
-  // }, 1000);
-
-  // if (isDone) {
-  //   clearInterval(timer)
-  // }
-  
+    timer.innerHTML =
+      "Time: " + minutes + "m " + seconds + "s " + milliseconds + "ms";
 }
 function randomNumber(low, high) {
   var create_randomNum = parseInt(
@@ -60,38 +49,34 @@ function count_swaps(property) {
   return counts;
 }
 
-function stopTime(inter){
-  document.getElementById("timer").innerHTML = "Time: 00: 00: 00"
-  return clearInterval(inter)
-}
 const start = async () => {
+  // every time the user clicks start, we want to use a fresh time
+  // so JS isn't comparing an old date
+  const d = new Date();
+  let startTime = d.getTime();
+  let interval = setInterval(() => Timer(startTime), 1); //setting the interval in our start function so we can stop it later
+  
   let algo = Number(document.querySelector(".algo_drop").value);
   let speed = Number(document.querySelector(".speed_drop").value);
   let algorithm = new Algorithm(speed);
-  let interval = setInterval(() => Timer(startTime), 100);
   await Alert_for_speed(speed);
   await Alert_for_Algo(algo);
-  // Problem may be invoking th eTimer function i this async function.
   if (algo === 1) await algorithm.BubbleSort();
   if (algo === 2) await algorithm.InsertionSort();
   // if (algo === 3) await algorithm.shelleSort();
   if (algo === 4) await algorithm.SelectionSort();
   if (algo === 5) await algorithm.MergeSort();
   if (algo === 6) await algorithm.QuickSort();
-  //const stopTime = document.getElementById("timer").innerHTML;
-  //document.getElementById("timer").remove();
-  // document.getElementById("showTime").innerHTML = "Time: 00: 00: 00"
-  // document.getElementById("showTime").setAttribute("style", "display:flex");
+
   let doneCells = document.querySelectorAll(".cell.done")
-  console.log(Array.from(doneCells).length, size)
-  const isDone = Array.from(doneCells).length === size
+  const isDone = Array.from(doneCells).length === size // checking if cells are done
   if (isDone) {
     console.log("FINISHED")
+    // once we clear the interval the displayed time will stop as the DOM will still hold the values we set in the Timer function
     interval = clearInterval(interval)
-    // stopTime(interval)
-    // return () => clearInterval(interval)
+    startTime = null // This will ensure our time starts from 0 when we press start again
+    return interval 
   }
-  return clearInterval(interval)
 };
 
 const RenderScreen = async () => {
@@ -112,7 +97,7 @@ const clear = async () => {
 };
 
 const RenderList = async () => {
-  let size = Number(document.querySelector(".size_drop").value);
+
   if (size === -1) {
     size = randomNumber(5, 150);
   }
@@ -129,7 +114,7 @@ const RenderList = async () => {
 };
 
 const RenderArray = async (sorted) => {
-
+  let size = Number(document.querySelector(".size_drop").value);
   await clear();
   let list = await randomList(size);
   if (sorted) list.sort((a, b) => a - b);
