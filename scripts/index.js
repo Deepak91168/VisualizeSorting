@@ -79,6 +79,27 @@ const start = async () => {
   }
 };
 
+const toggleTheme = () => {
+  const body = document.body;
+  const box = document.getElementById('box');
+  const themeImg = document.getElementById('theme_img');
+  const dropdowns = document.getElementsByTagName('select');
+  const cells = document.getElementsByClassName('cell');
+
+  const isDarkMode = body.classList.toggle('dark-mode');
+
+  themeImg.src = isDarkMode ? 'images/dark-mode.png' : 'images/light-mode.png';
+  box.style.background = isDarkMode ? '#121212' : '#fff';
+
+  for (const dropdown of dropdowns) {
+    dropdown.classList.toggle('dark', isDarkMode);
+  }
+
+  for (const cell of cells) {
+    cell.style.borderRightColor = isDarkMode ? '#121212' : 'white';
+  }
+}
+
 const RenderScreen = async () => {
   await RenderList();
 };
@@ -143,6 +164,9 @@ document
   .querySelector(".start_start")
   .addEventListener("click", start, response);
 document.querySelector(".size_drop").addEventListener("change", RenderScreen);
+document.getElementById('theme_toggle').addEventListener('click', () => {
+  toggleTheme();
+});
 document.getElementById("reset_btn").addEventListener("click", () => {
   location.reload();
 });
