@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Visualize Sorting</title>
 </head>
 <!-- &#128065;s -->
@@ -52,6 +53,10 @@
             </select>
         </div>
         <div class="button_wrapper">
+            <div class="darkToggle" id="dark-mode-toggle"> 
+                <i class="fa-solid fa-moon" style="color: #ffffff; cursor: pointer; font-size: larger; margin-right: 2px; padding: 1px;"></i>
+                <i class="fa-solid fa-circle-half-stroke" style="color: #000000; cursor: pointer; font-size: larger;padding: 1px; "></i>    
+            </div>
         <div class="start_start" id="sort_begains">START</div>
         <div class="start_start" id="reset_btn">RESET</div>
     </div>
@@ -77,6 +82,7 @@
     <script src="./scripts/index.js"></script>
     <script src="./scripts/functions.js"></script>
     <script src="./scripts/Algos.js"></script>
+    <script src="./scripts/DarkMode.js"></script>
 </body>
 
 </html>
