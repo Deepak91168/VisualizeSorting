@@ -7,6 +7,34 @@
   margin: 0;
   padding: 0;
 }
+
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+.dark-mode .darkToggle .fa-moon {
+  display: none;
+}
+.dark-mode .heading{
+  color: #111;
+}
+.dark-mode .start_start{
+  color: #111;
+}
+body:not(.dark-mode) .darkToggle .fa-circle-half-stroke {
+  display: none;
+}
+.dark-mode .frame {
+  color: #f1c40f;
+  background: black;
+}
+.dark-mode .cell {
+  border-right: 0.005em solid black;
+}
+.dark-mode #menu {
+  background-color: #111;
+  color: #fff;
+}
 .fork-me {
   position: fixed;
   top: 0;
