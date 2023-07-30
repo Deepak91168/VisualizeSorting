@@ -24,6 +24,9 @@
 
 ## Screenshot
 ![Visualize Sorting](./images/screenshot.png)
+- Dark Mode
+  
+![Visualize Sorting](./images/screenshot-dark.png)
 
 
 ## Contributing
