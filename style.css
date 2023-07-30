@@ -15,15 +15,16 @@ body.dark-mode {
 .dark-mode .darkToggle .fa-moon {
   display: none;
 }
-.dark-mode .heading{
-  color: #111;
-}
-.dark-mode .start_start{
-  color: #111;
-}
 body:not(.dark-mode) .darkToggle .fa-circle-half-stroke {
   display: none;
 }
+.dark-mode .heading {
+  color: #111;
+}
+.dark-mode .start_start {
+  color: #111;
+}
+
 .dark-mode .frame {
   color: #f1c40f;
   background: black;
