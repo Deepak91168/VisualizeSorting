@@ -23,7 +23,8 @@
 - Open `index.html` with your browser or run using liveServer.
 
 ## 📷 Screenshot
-![Imgur](https://i.imgur.com/UYoqSKT.gif)
+<!-- ![Imgur](https://i.imgur.com/QBG3V0Q.png) -->
+<a href="https://imgur.com/UYoqSKT"><img src="https://i.imgur.com/UYoqSKT.gif" title="source: imgur.com" /></a>
 
 ## 🤝 Contributing
 
