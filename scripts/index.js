@@ -1,15 +1,15 @@
 let size = Number(document.querySelector(".size_drop").value);
-const timer = document.getElementById("timer")
+const timer = document.getElementById("timer");
 
-// This will be the function which updates the DOM 
+// This will be the function which updates the DOM
 function Timer(start_time) {
-    var current_time = new Date().getTime();
-    var difference = current_time - start_time;
-    var minutes = Math.floor((difference % (60 * 60 * 1000)) / (1000 * 60));
-    var seconds = Math.floor((difference % (60 * 1000)) / 1000);
-    var milliseconds = Math.floor(difference % 1000);
-    timer.innerHTML =
-      "Time: " + minutes + "m " + seconds + "s " + milliseconds + "ms";
+  var current_time = new Date().getTime();
+  var difference = current_time - start_time;
+  var minutes = Math.floor((difference % (60 * 60 * 1000)) / (1000 * 60));
+  var seconds = Math.floor((difference % (60 * 1000)) / 1000);
+  var milliseconds = Math.floor(difference % 1000);
+  timer.innerHTML =
+    "Time: " + minutes + "m " + seconds + "s " + milliseconds + "ms";
 }
 function randomNumber(low, high) {
   var create_randomNum = parseInt(
@@ -55,7 +55,7 @@ const start = async () => {
   const d = new Date();
   let startTime = d.getTime();
   let interval = setInterval(() => Timer(startTime), 1); //setting the interval in our start function so we can stop it later
-  
+
   let algo = Number(document.querySelector(".algo_drop").value);
   let speed = Number(document.querySelector(".speed_drop").value);
   let algorithm = new Algorithm(speed);
@@ -68,14 +68,14 @@ const start = async () => {
   if (algo === 5) await algorithm.MergeSort();
   if (algo === 6) await algorithm.QuickSort();
 
-  let doneCells = document.querySelectorAll(".cell.done")
-  const isDone = Array.from(doneCells).length === size // checking if cells are done
+  let doneCells = document.querySelectorAll(".cell.done");
+  const isDone = Array.from(doneCells).length === size; // checking if cells are done
   if (isDone) {
-    console.log("FINISHED")
+    console.log("FINISHED");
     // once we clear the interval the displayed time will stop as the DOM will still hold the values we set in the Timer function
-    interval = clearInterval(interval)
-    startTime = null // This will ensure our time starts from 0 when we press start again
-    return interval 
+    interval = clearInterval(interval);
+    startTime = null; // This will ensure our time starts from 0 when we press start again
+    return interval;
   }
 };
 
@@ -97,7 +97,7 @@ const clear = async () => {
 };
 
 const RenderList = async () => {
-
+  size = Number(document.querySelector(".size_drop").value);
   if (size === -1) {
     size = randomNumber(5, 150);
   }

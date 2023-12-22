@@ -23,10 +23,7 @@
 - Open `index.html` with your browser or run using liveServer.
 
 ## 📷 Screenshot
-![Visualize Sorting](./images/screenshot.png)
-- Dark Mode
-  
-![Visualize Sorting](./images/screenshot-dark.png)
+![Imgur](https://i.imgur.com/UYoqSKT.gif)
 
 ## 🤝 Contributing
 
