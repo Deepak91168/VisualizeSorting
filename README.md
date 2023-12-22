@@ -24,8 +24,7 @@
 
 ## 📷 Screenshot
 ![Imgur](https://i.imgur.com/QBG3V0Q.png)
-
-<!-- <a href="https://imgur.com/UYoqSKT"><img src="https://i.imgur.com/UYoqSKT.gif" title="source: imgur.com" /></a> -->
+![Imgur](/images/sorting.gif)
 
 ## 🤝 Contributing
 
